@@ -1,0 +1,22 @@
+version: 2.11.1
+apkFileName: VDOSkay_50_112.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 17
+  targetSdkVersion: 30
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 50
+  versionName: 112
+sharedLibrary: false
+sparseResources: false
+compactEntries: false
+doNotCompress:
+- arsc
+- png
