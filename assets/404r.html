@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Internet UI</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f8fafc; /* Modern soft background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #1e293b;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            max-width: 420px;
+            width: 90%;
+            border: 1px solid #e2e8f0;
+        }
+
+        /* Icon Styling */
+        .icon-wrapper {
+            width: 80px;
+            height: 80px;
+            background-color: #fef2f2; /* Soft red background */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 24px auto;
+            box-shadow: 0 0 0 8px #fff5f5; /* Outer ring effect */
+        }
+
+        .icon-wrapper svg {
+            width: 40px;
+            height: 40px;
+        }
+
+        /* Text Styling */
+        h1 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #0f172a;
+            letter-spacing: -0.3px;
+        }
+
+        p {
+            font-size: 15px;
+            color: #64748b;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        /* Button Styling */
+        .scan-button {
+            background-color: #2563eb; /* Vibrant Professional Blue */
+            color: #ffffff;
+            border: none;
+            padding: 12px 32px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.25s ease;
+            box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+        }
+
+        .scan-button:hover {
+            background-color: #1d4ed8;
+            box-shadow: 0 6px 8px -1px rgba(37, 99, 235, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .scan-button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px -1px rgba(37, 99, 235, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="icon-wrapper">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="5" y="2" width="10" height="18" rx="2" stroke="#ef4444" stroke-width="1.5"/>
+                <circle cx="10" cy="17.5" r="0.5" fill="#ef4444"/>
+                <path d="M14 8C14 8 15 7.5 17 7.5C19 7.5 20 8 20 8V12.5C20 14.5 17 16.5 17 16.5C17 16.5 14 14.5 14 12.5V8Z" fill="white" stroke="#ef4444" stroke-width="1.5"/>
+                <path d="M15.5 10.5L18.5 13.5M18.5 10.5L15.5 13.5" stroke="#ef4444" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+        </div>
+
+        <h1>No Internet Connection</h1>
+        <p>An active internet connection is required to scan your device. Please check your network and try again.</p>
+
+        <button class="scan-button" onclick="location.reload()">Retry Connection</button>
+    </div>
+
+</body>
+</html>
